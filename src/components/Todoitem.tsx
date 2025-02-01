@@ -14,7 +14,7 @@ const Todoitem = ({ todos, Ontoggle, onDelete }: TodoTypes) => {
                 {text}
             </span>
             <button onClick={() => onDelete(id)} className=" text-red-500 cursor-pointer">
-                Deletes
+                Delete
             </button>
         </li>
     );

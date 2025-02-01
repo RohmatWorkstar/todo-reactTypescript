@@ -44,7 +44,7 @@ const Todolist = () => {
                 <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">TODO LIST</h1>
                 <Todoinput Addtodo={addTodo} />
                 <ul className="space-y-4">
-                    {Todos.map((item, id) => {
+                    {Todos.map((item) => {
                         return <Todoitem onDelete={handleDelete} todos={item} Ontoggle={handleCompleted} />;
                     })}
                 </ul>
